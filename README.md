@@ -1,5 +1,5 @@
 # asciify
---
+
 - Converts `jpeg\png` images to `ascii` and prints to terminal.
 #### Build :
 ---
@@ -11,13 +11,9 @@
 	cmake -S .. -B .			
 	```
 	- Make
-		- If you don't want to use cmake for some reason, this would put built files in the `/asciify` directory
-	```
-		make
-	```
+		- If you don't want to use cmake for some reason, this would put built files in the `/asciify` directory simply run `make` from where binary is located
 - Usage : `./main [path-to-image] `
-	- example :  
-		`./main ../img/awesomeface.png`
+	- example : `./main ../img/awesomeface.png`
 
 ##### Results :
 
