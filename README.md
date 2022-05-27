@@ -25,9 +25,7 @@
 
 <img src="./results/astro_ascii.jpg" alt="astro_ascii" style="width:300px;"/>
 
-<figure class="video_container">
-  <iframe src="./results/output.mp4" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+![ball.mp4](/results/output.gif)
 
 #### Dependencies:
 - ffmpeg
