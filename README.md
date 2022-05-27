@@ -1,37 +1,34 @@
 # asciify
 
-- Converts `jpeg\png` images to `ascii` and prints to terminal.
+- Converts `jpeg\png` images/videos to `ascii` and prints to terminal.
 #### Build :
 ---
-- 	Two options to build:
-	- Cmake
-	``` 
-	mkdir -p build/
-	cd build
-	cmake -S .. -B .			
-	```
-	- Make
-		- If you don't want to use cmake for some reason, this would put built files in the `/asciify` directory simply run `make` from where binary is located
-- Usage : `./main [path-to-image] `
-	- example : `./main ../img/awesomeface.png`
+```shell
+	$ sudo apt install ffmpeg
+	$ git clone https://github.com/xenorivai/asciify.git
+	$ make
+
+```
+- Usage : `./main [path-to-file] -[mode]{v,i}`
+	- example :  
+		`./main ./img/homer.png -i`
+
+		`./main ./img/ball.mp4 -v`
 
 ##### Results :
 
-![awesomeface](/asciify/img/awesomeface.png)
-![ascii_awesomeface](/results/awesomeface_ascii.jpg)
+<img src="./asciify/img/awesomeface.png" alt="awesomeface" style="width:200px;"/>
 
-![astro](/asciify/img/astro.jpg) 
-![astro_ascii](/results/astro_ascii.jpg)
+<img src="./results/awesomeface_ascii.jpg" alt="awesomeface" style="width:300px;height:300px"/>
 
-![bike](/asciify/img/bike.jpg)
-![bike_ascii](/results/bike_ascii.jpg)
+<img src="./asciify/img/astro.jpg" alt="astro" style="width:300px;"/>
 
-![pikachu](/asciify/img/rsz_2surprised_pikachu.png)
-![pikachu_ascii](/results/pikachu_ascii.jpg)
+<img src="./results/astro_ascii.jpg" alt="astro_ascii" style="width:300px;"/>
+
+<figure class="video_container">
+  <iframe src="./results/output.mp4" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
 
 #### Dependencies:
+- ffmpeg
 - [stb_image](https://github.com/nothings/stb)
-
-#### TODO
----
-- asciify videos

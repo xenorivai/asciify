@@ -1,10 +1,10 @@
 all : main
 
 main : main.o
-	g++ -o $@ $<
+	g++ -std=c++17 -o $@ $<
 
 %.o : %.cpp
-	g++ -c $<
+	g++ -std=c++17 -c $<
 
 clean :
-	rm *.o *.jpg *.txt main
+	rm *.o *.png *.txt main
